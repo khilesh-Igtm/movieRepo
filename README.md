@@ -64,11 +64,11 @@ Production -> npm start
 
 ### 6. API Endpoints
 ```bash
-Method,Endpoint,Description
-POST,/api/entries,Add new entry
-GET,/api/entries,List with pagination
-PUT,/api/entries/:id,Update entry
-DELETE,/api/entries/:id,Delete entry
-GET,/api/search?title=...,Search by title (bonus)
+Method    Endpoint                       Description
+POST      /api/entries                   Add a new entry
+GET       /api/entries                   List entries with pagination
+PUT       /api/entries/:id               Update an entry
+DELETE    /api/entries/:id               Delete an entry
+GET       /api/search?title=...          Search by title
 ```
 
