@@ -38,21 +38,27 @@ git clone https://github.com/khilesh-Igtm/movieRepo.git
 cd movieRepo/server
 npm install
 
-
-2. Configure the Database
+```
+### 2. Configure the Database
+```bash
 Start MySQL and create a database:
 CREATE DATABASE favorites;
 
 Create a .env file in the root:
 DATABASE_URL="mysql://root:your_password@localhost:3306/favorites"
+```
 
-3. Run Database Migrations
+### 3. Run Database Migrations
+```bash
 npx prisma migrate dev --name init
-
-4. Seed the Database
+```
+### 4. Seed the Database
+```bash
 node prisma/seed.js
-
-5. Start the Server
+```
+### 5. Start the Server
+```bash
 Development (with auto-restart) -> npm run dev
 Production -> npm start
+```
 
