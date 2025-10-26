@@ -26,23 +26,23 @@ Zod,Schema validation
 
 Setup Instructions
 1. Clone & Install Dependencies
-git clone <this-repo-url>
-cd server (if not inside server folder)
-npm install
+-> git clone <this-repo-url>
+-> cd server (if not inside server folder)
+-> npm install
 
 
 2. Configure the Database
 Start MySQL and create a database:
-CREATE DATABASE favorites;
+-> CREATE DATABASE favorites;
 
 Create a .env file in the root:
-DATABASE_URL="mysql://root:your_password@localhost:3306/favorites"
+-> DATABASE_URL="mysql://root:your_password@localhost:3306/favorites"
 
 3. Run Database Migrations
-npx prisma migrate dev --name init
+-> npx prisma migrate dev --name init
 
 4. Seed the Database
-node prisma/seed.js
+-> node prisma/seed.js
 
 5. Start the Server
 Development (with auto-restart) -> npm run dev
