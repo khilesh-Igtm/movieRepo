@@ -37,3 +37,22 @@ Supports **CRUD operations**, **pagination**, **input validation**, and **search
 git clone https://github.com/khilesh-Igtm/movieRepo.git
 cd movieRepo/server
 npm install
+
+
+2. Configure the Database
+Start MySQL and create a database:
+CREATE DATABASE favorites;
+
+Create a .env file in the root:
+DATABASE_URL="mysql://root:your_password@localhost:3306/favorites"
+
+3. Run Database Migrations
+npx prisma migrate dev --name init
+
+4. Seed the Database
+node prisma/seed.js
+
+5. Start the Server
+Development (with auto-restart) -> npm run dev
+Production -> npm start
+
