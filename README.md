@@ -26,7 +26,7 @@ Zod,Schema validation
 
 Setup Instructions
 1. Clone & Install Dependencies
--> git clone <this-repo-url>
+-> git clone https://github.com/khilesh-Igtm/movieRepo.git
 -> cd server (if not inside server folder)
 -> npm install
 
